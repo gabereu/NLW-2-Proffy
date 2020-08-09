@@ -1,0 +1,58 @@
+.input-group{
+    display: flex;
+    flex-direction: column;
+    background: var(--color-background);
+    padding: 1px;
+    border-radius: .8rem;
+    overflow: hidden;
+    width: 100%;
+}
+.input-groupable{
+    margin: .5px 0;
+    position: relative;
+    background-color: #fff;
+    padding: 2.5rem 2rem .5rem;
+    font-size: 1.5rem;
+    height: 5.5rem;
+}
+.input-groupable:first-child{
+    margin-top: 0;
+}
+.input-groupable:last-child{
+    margin-bottom: 0;
+}
+
+.input-groupable input{
+    width: 100%;
+    border: none;
+    outline: 0;
+    background-color: #fff;
+    color: var(--color-text-base);
+}
+
+.input-groupable:focus-within::before {
+    content: '';
+    width: 2px;
+    height: calc(100% - 10px);
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background: var(--color-primary);
+}
+
+.input-groupable input:focus ~ label,
+.input-groupable input:not(:placeholder-shown) ~ label{
+    transform: translateY(-100%);
+    font-size: 1.4rem;
+}
+
+.input-groupable input ~ label {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    transition: .4s;
+    color: var(--color-text-complement);
+    pointer-events: none;
+    
+}
