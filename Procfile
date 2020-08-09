@@ -1,1 +1,0 @@
-web: cd ./serrver && npm run build && npm run start
