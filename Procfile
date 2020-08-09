@@ -1,1 +1,1 @@
-web: cd ./serrver && yarn build && yarn start
+web: cd ./serrver && npm run build && npm run start
