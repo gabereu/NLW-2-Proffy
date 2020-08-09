@@ -1,0 +1,1 @@
+web: cd ./serrver && yarn build && yarn start
