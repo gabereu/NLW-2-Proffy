@@ -15,6 +15,7 @@ Made in Next Level Week #2 from RocketSeat. :rocket:
 - Logout - a route to clear the cookie-session
 - isAuthenticated - a route to check authentication
 - Profile - user profile can be updated any time with auth
+- Forgot password system
 
 ## Classes System
 
